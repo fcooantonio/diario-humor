@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./src/style.css">
+    <script src="./src/script.js" defer></script>
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -11,7 +12,20 @@
     <title>Diário de Humor</title>
 </head>
 <body>
-    
-    <script src="./src/script.js"></script>
+    <div id="root">
+        <div id="welcome-modal" class="modal-container active">
+            <div class="modal-content">
+                <h2>Boas Vindas ao seu Diário de Humor!</h2>
+                <p>Para começar, digite seu nome:</p>
+                <input type="text" id="username-input" placeholder="Seu nome aqui...">
+                <button id="start-button">Começar</button>
+            </div>
+        </div>
+        <div id="app-container" class="hidden">
+            <header>
+                <h1 id="welcome-message"></h1>
+            </header>
+        </div>
+    </div>
 </body>
 </html>
