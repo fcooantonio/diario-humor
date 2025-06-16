@@ -3,19 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./src/style.css">
-    <script src="./src/script.js" defer></script>
-    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0" rel="stylesheet" />
+    <link rel="stylesheet" href="./src/style.css">
+    <script src="./src/script.js" defer></script>
     <title>Diário de Humor</title>
 </head>
 <body>
     <div id="root">
         <div id="welcome-modal" class="modal-container active">
             <div class="modal-content">
-                <h2>Boas Vindas ao seu Diário de Humor!</h2>
+                <h2>Boas-vindas ao seu Diário de Humor!</h2>
                 <p>Para começar, digite seu nome:</p>
                 <input type="text" id="username-input" placeholder="Seu nome aqui...">
                 <button id="start-button">Começar</button>
@@ -25,6 +25,23 @@
             <header>
                 <h1 id="welcome-message"></h1>
             </header>
+
+            <main>
+                <section class="mood-tracker">
+                    <h2>Como você está se sentindo hoje?</h2>
+                    <div class="emoji-selector">
+                        <span class="emoji material-symbols-rounded" data-icon=":D" data-mood="Feliz">sentiment_satisfied</span>
+                        <span class="emoji material-symbols-rounded" data-icon=":|" data-mood="Normal">sentiment_neutral</span>
+                        <span class="emoji material-symbols-rounded" data-icon=":(" data-mood="Triste">sentiment_dissatisfied</span>
+                        <span class="emoji material-symbols-rounded" data-icon=":@" data-mood="Irritado">sentiment_extremely_dissatisfied</span>
+                        <span class="emoji material-symbols-rounded" data-icon="ZzZ" data-mood="Cansado">sentiment_very_dissatisfied</span>
+                    </div>
+                    <input type="hidden" id="selected-mood-name">
+                    <input type="hidden" id="selected-mood-icon">
+                    <textarea id="mood-reason" placeholder="Por que você está se sentindo assim?" rows="3"></textarea>
+                    <button id="save-button">Salvar Humor</button>
+                </section>
+            </main>
         </div>
     </div>
 </body>
