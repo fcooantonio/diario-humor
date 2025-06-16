@@ -13,7 +13,7 @@
 </head>
 <body>
     <div id="root">
-        <div id="welcome-modal" class="modal-container active">
+        <div id="welcome-modal" class="modal-container">
             <div class="modal-content">
                 <h2>Boas-vindas ao seu Diário de Humor!</h2>
                 <p>Para começar, digite seu nome:</p>
@@ -25,7 +25,6 @@
             <header>
                 <h1 id="welcome-message"></h1>
             </header>
-
             <main>
                 <section class="mood-tracker">
                     <h2>Como você está se sentindo hoje?</h2>
@@ -40,6 +39,14 @@
                     <input type="hidden" id="selected-mood-icon">
                     <textarea id="mood-reason" placeholder="Por que você está se sentindo assim?" rows="3"></textarea>
                     <button id="save-button">Salvar Humor</button>
+                </section>
+                <section class="history">
+                    <h2>Seu Histórico Semanal</h2>
+                    <div id="weekly-history" class="history-list"></div>
+                </section>
+                <section class="summary">
+                    <h2>Resumo dos Humores</h2>
+                    <div id="mood-summary"></div>
                 </section>
             </main>
         </div>

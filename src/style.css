@@ -176,3 +176,58 @@ button {
 button:hover {
     opacity: 0.9;
 }
+
+.history-list .entry {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    border-bottom: 1px solid #eee;
+}
+.history-list .entry:last-child {
+    border-bottom: none;
+}
+
+.entry-emoji {
+    font-size: 2.5rem;
+    margin-right: 20px;
+    color: var(--primary-color);
+}
+
+.entry-details p {
+    margin: 0;
+}
+
+.entry-details .entry-date {
+    font-weight: 600;
+    color: var(--secondary-color);
+}
+
+.entry-details .entry-reason {
+    font-style: italic;
+    color: #555;
+    padding-top: 4px;
+}
+
+#mood-summary {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.summary-item {
+    display: flex;
+    align-items: center;
+    font-size: 1.2rem;
+    font-weight: 600;
+    background-color: #f0f0f0;
+    padding: 8px 15px;
+    border-radius: 25px;
+}
+
+.summary-item .material-symbols-outlined {
+    font-size: 2rem;
+    margin-right: 10px;
+    color: var(--primary-color);
+}
