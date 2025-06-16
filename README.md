@@ -2,6 +2,8 @@
 
 Este é um aplicativo web interativo criado para ajudar os usuários a registrar e monitorar seu humor diário. A aplicação possui uma interface intuitiva e direta que salva os dados diretamente no navegador do usuário para uma experiência contínua.
 
+![interface](./src/images/interface.png)
+
 ## 🎨 Interface Visual
 
 A aplicação recebe o usuário com uma tela de boas-vindas para personalização. A tela principal é organizada em seções claras, com um seletor de humores que utiliza ícones grandes e interativos, uma área para anotações e painéis que exibem o histórico e um resumo visual dos humores registrados. O design é focado na usabilidade, com um tema de cores agradável em tons de roxo e azul.
